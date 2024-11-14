@@ -20,7 +20,7 @@ const Calculator = () => {
   const calculate = () => {
     try {
       if (input === '') {
-        setResult('ERROR');
+        setResult('Error');
       } else {
         // Evaluate the expression
         const evalResult = eval(input); 
@@ -51,11 +51,11 @@ const Calculator = () => {
         <button onClick={() => append('4')}>4</button>
         <button onClick={() => append('5')}>5</button>
         <button onClick={() => append('6')}>6</button>
-        <button onClick={() => append('*')}></button>
+        <button onClick={() => append('-')}>-</button>
         <button onClick={() => append('1')}>1</button>
         <button onClick={() => append('2')}>2</button>
         <button onClick={() => append('3')}>3</button>
-        <button onClick={() => append('-')}>-</button>
+        <button onClick={() => append('*')}>*</button>
         <button onClick={() => append('0')}>0</button>
         <button onClick={clearDisplay}>C</button>
         <button onClick={calculate}>=</button>
